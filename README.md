@@ -2,3 +2,5 @@
 
 
 ![og-image](cookie_help.png)
+
+## Functions
