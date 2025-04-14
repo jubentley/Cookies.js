@@ -27,3 +27,5 @@ function cookie_set(name, value, optional_path = '/') {
     return true;
 }
 ```
+
+Set new cookie or overwrite cooking with the same name.
