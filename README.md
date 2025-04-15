@@ -4,7 +4,7 @@
 ![og-image](cookie_help.png)
 
 ## Functions
-
+### cookie_set()
 ```JavaScript
 /**
 //~  set site cookie
