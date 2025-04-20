@@ -4,7 +4,9 @@
 ![og-image](cookie_help.png)
 
 ## Functions
+
 ### cookie_set()
+Set new cookie or overwrite cooking with the same name.
 ```JavaScript
 /**
 //~  set site cookie
@@ -28,4 +30,32 @@ function cookie_set(name, value, optional_path = '/') {
 }
 ```
 
-Set new cookie or overwrite cooking with the same name.
+
+### cookie_get()
+```JavaScript
+
+/**
+//~  get cookie using 'name'
+//~  returns value OR
+//~  if not present returns string "404"
+//~  note: firefox (unlike chrome) will show all path data but only proper path data will be retrieved (May 23)
+ * @param {string} name
+ * @returns {string | "404"}
+ */
+function cookie_get(name) {
+
+    if (
+        document.cookie
+            .split(";").some((item) => item.trim().startsWith(`${name}=`))
+    ) {
+        return document.cookie
+            .split("; ").find((row) => row.startsWith(`${name}=`))?.split("=")[1];
+    }
+    else
+    {
+        return "404";
+        //return false;
+        // debating this return type //
+    }
+}
+```
