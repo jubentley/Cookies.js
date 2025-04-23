@@ -59,4 +59,4 @@ function cookie_get(name) {
     }
 }
 ```
-###cookie_delete()
+### cookie_delete()
