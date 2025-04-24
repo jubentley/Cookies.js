@@ -32,6 +32,7 @@ function cookie_set(name, value, optional_path = '/') {
 
 
 ### cookie_get()
+Get value of named existing cookie
 ```JavaScript
 
 /**
@@ -60,3 +61,21 @@ function cookie_get(name) {
 }
 ```
 ### cookie_delete()
+
+```JavaScript
+/**
+ *  delete 'name'ed site cookie
+ *  (optional) path, will be needed if path set, must match
+ *  * if correct path is not specified, delete will be unsucessfull,
+ *  path cannot be accessed via JavaScript therefore the storage pane in console 
+ *  has to be used if unsure *
+ * @param {string} name
+ * @param {string=} path
+ */
+function cookie_delete(name, path = '/') {
+
+    document.cookie =
+        `${name}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;SameSite=${_cookie_samesite};path=${path};`;
+}
+```
+
