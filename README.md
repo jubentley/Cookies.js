@@ -6,7 +6,7 @@
 ## Functions
 
 ### cookie_set()
-Set new cookie or overwrite cooking with the same name.
+Set new cookie or overwrite cookie with the same name.
 ```JavaScript
 /**
 //~  set site cookie
