@@ -32,7 +32,7 @@ function cookie_set(name, value, optional_path = '/') {
 
 
 ### cookie_get()
-Get value of named existing cookie
+Get value of named existing cookie.
 ```JavaScript
 
 /**
