@@ -79,3 +79,4 @@ function cookie_delete(name, path = '/') {
 }
 ```
 
+### cookie_consolelog()
