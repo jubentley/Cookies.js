@@ -61,7 +61,7 @@ function cookie_get(name) {
 }
 ```
 ### cookie_delete()
-Delete named cookie, if cookie does not exists then nothing.
+Delete named cookie if exists else do nothing.
 ```JavaScript
 /**
  *  delete 'name'ed site cookie
@@ -80,3 +80,4 @@ function cookie_delete(name, path = '/') {
 ```
 
 ### cookie_consolelog()
+
