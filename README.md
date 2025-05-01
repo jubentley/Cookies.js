@@ -81,3 +81,27 @@ function cookie_delete(name, path = '/') {
 
 ### cookie_consolelog()
 
+```JavaScript
+/**
+ *  [Console Function]
+ *  cookie_consolelog (help)
+ *  quick console printout of functions, for use inside the console
+ * @returns {boolean}
+ */
+function cookie_consolelog() {
+
+    console.clear();
+    console.log(
+`%ccookie_consolelog();
+
+%c⬘%c cookie_set(name, value, path = '/')
+%c⬘%c cookie_get(name)
+%c⬘%c cookie_delete(name, path = '/')
+%c⬘%c cookie_get_all()
+%c⬘%c cookie_help()
+`       , _cookie_console_colors[1],
+        ...Array(5).fill(_cookie_console_colors).flat()
+    );
+    return true;
+}
+```
