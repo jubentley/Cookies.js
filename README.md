@@ -80,7 +80,7 @@ function cookie_delete(name, path = '/') {
 ```
 
 ### cookie_consolelog()
-
+Quick printout of functions available from cookies.js
 ```JavaScript
 /**
  *  [Console Function]
