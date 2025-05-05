@@ -105,3 +105,4 @@ function cookie_consolelog() {
     return true;
 }
 ```
+### cookie_help()
