@@ -106,3 +106,56 @@ function cookie_consolelog() {
 }
 ```
 ### cookie_help()
+
+```JavaScript
+/**
+ *  [Console Function]
+ *  Prints cookie help screen.
+ * @returns {boolean}
+ */
+function cookie_help() {
+
+    // type cookie_help() in the console ;)
+
+    console.log(`%c
+                      /**/
+        /*.     .-,  /  /     *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+       /   \\~~~/   \\/  /     |    i know everything about cookies       |
+      |     \\_/     \\ /   O |  want to share in some of my knowledge?  |
+     /|              |\\ o   *~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~* 
+__   | |   %cO    O%c     | |             _   ___    ___
+%co%c \\  |  \\  ~~~~   /  /  |    ____  __| \\ /   \\  /%cx%c  \\
+ x|   \\   \`-..- '\`.-'\`  /   |%cx%c   ||  x || o  | |  o |
+_/     \`--.___.- '--'._./ o \\__ / \\__ / \\_x_/  \\___/ 
+    %c
+    document.cookies are stored like this: "val1=this;val2=that;val3=ilikecookies"
+    HttpOnly: Sent to server only, not accesable clientside
+    SameSite: Dont send with reqests from other sources (XSRF)
+    Path:     Restrict to path ie ~/here/this_path_only (not gettable via JavaScript)
+    Domain:   Can include or exclude subdomains
+    Secure:   Use only HTTPS
+    Expires:  set 0 seconds to delete, dont set for session or seconds till expiry
+
+    %c*%c note on cookie_delete(name, path), if path is incorrect delete will be unsucessfull,
+    path cannot be provided with JS so storage console has to be used to find path %c* 
+
+    `,
+        _cookie_console_colors[0],
+        _cookie_console_colors[1],
+        _cookie_console_colors[0],
+        'font-weight: 900; font-style: italic; color: #0000FF;',
+        _cookie_console_colors[0],
+        'font-weight: 900; font-style: italic; color: #FF0000;',
+        _cookie_console_colors[0],
+        'font-weight: 900; font-style: italic; color: #00FF00;',
+        _cookie_console_colors[0],
+        _cookie_console_colors[1],
+        'font-weight: 900; font-style: italic; color: #00FF00;',
+        _cookie_console_colors[1],
+        'font-weight: 900; font-style: italic; color: #00FF00;',
+        );  
+
+
+    return true;
+}
+```
